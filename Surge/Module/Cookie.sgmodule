@@ -7,8 +7,8 @@ BilibiliMangaCookie = type=http-request,pattern=^https:\/\/app\.bilibili\.com\/x
 
 TieBaCookie = type=http-request,pattern=https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
 
-AliyunDriveCookie = requires-body=1,type=http-response,pattern=https:\/\/auth.aliyundrive.com\/v2\/account\/token,script-path=https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js
+AliyunDriveCookie = requires-body=1,type=http-response,pattern=https:\/\/auth.alipan.com\/v2\/account\/token,script-path=https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js
 
 [MITM]
 
-hostname = %APPEND% app.bilibili.com, c.tieba.baidu.com, auth.aliyundrive.com
+hostname = %APPEND% app.bilibili.com, c.tieba.baidu.com, auth.alipan.com
